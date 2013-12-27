@@ -1,0 +1,48 @@
+height/2  /near = tan(fon/2)  => height = 2near tan(fon/2)
+
+ar = width/height
+
+L->/V
+
+
+trace(ray_origin, ray-dir, depth)
+{
+if(depth>10
+return color = (0,0,0)
+for all objects in scene
+check for intersection (ray_Dir, ray_origin)
+
+if no intersection
+return backgroundcolor
+
+else
+(shadow)	for all lights in scene
+			for all object in scene
+				if check for intersection(point.obj,L->)
+				boolean shadow = rue
+				break - in shadow
+
+color += shadow^-1+*phong + trance(refletion)+trace(refract)
+
+}
+color+= trance(reflection)+Trace(reract)
+point of intersection =
+r0+tRd
+l-> (L.pos - point ofintersetion)normalize
+point = point + L->(epsiolon 0.0000001)
+
+intersection(ray_dir, ray_origin)
+{
+}
+(x-xc)^2 + (y-yc)^2 + (z-zc)^2 = R^2
+(P-C)^2 = R^2   
+
+P=Ro+ tRd
+(R0+tRd-c)^2 = R^2
+
+
+R0^2 + tRoRd - R0C
++tRdR0 + t^2Rd^2 - tRdC
+-cR0-ctRd-c^2=R^2
+
+

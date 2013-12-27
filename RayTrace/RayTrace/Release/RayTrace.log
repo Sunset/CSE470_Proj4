@@ -1,0 +1,31 @@
+﻿Build started 12/4/2013 5:13:59 AM.
+     1>Project "C:\Users\Owner\Dropbox\Public\RayTrace\RayTrace\RayTrace.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt starter.cpp
+         starter.cpp
+     1>c:\users\owner\dropbox\public\raytrace\raytrace\Scene.h(407): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(246) : see declaration of 'stricmp'
+     1>c:\users\owner\dropbox\public\raytrace\raytrace\Scene.h(420): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(246) : see declaration of 'stricmp'
+     1>c:\users\owner\dropbox\public\raytrace\raytrace\Scene.h(456): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(246) : see declaration of 'stricmp'
+     1>c:\users\owner\dropbox\public\raytrace\raytrace\RayTrace.h(138): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\owner\dropbox\public\raytrace\raytrace\RayTrace.h(169): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\owner\dropbox\public\raytrace\raytrace\RayTrace.h(188): warning C4805: '==' : unsafe mix of type 'boolean' and type 'bool' in operation
+     1>c:\users\owner\dropbox\public\raytrace\raytrace\RayTrace.h(209): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\owner\dropbox\public\raytrace\raytrace\RayTrace.h(214): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\owner\dropbox\public\raytrace\raytrace\RayTrace.h(227): warning C4805: '==' : unsafe mix of type 'boolean' and type 'bool' in operation
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Owner\Dropbox\Public\RayTrace\Release\RayTrace.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\RayTrace.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Owner\Dropbox\Public\RayTrace\Release\RayTrace.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Owner\Dropbox\Public\RayTrace\Release\RayTrace.lib" /MACHINE:X86 Release\3ds.obj
+         Release\starter.obj
+         Release\xmlParser.obj
+         Generating code
+         Finished generating code
+         RayTrace.vcxproj -> C:\Users\Owner\Dropbox\Public\RayTrace\Release\RayTrace.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Owner\Dropbox\Public\RayTrace\Release\RayTrace.exe;#1" /manifest Release\RayTrace.exe.intermediate.manifest
+     1>Done Building Project "C:\Users\Owner\Dropbox\Public\RayTrace\RayTrace\RayTrace.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.13

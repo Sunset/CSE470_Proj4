@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Scene Description in XML -->
+<scene desc="Simple Test Scene - Triangle + Sphere."
+	   author="Dr. Ross">
+	<!-- Background Color and Ambient Light Property -->
+	<background>
+		<color red="0.0" green="0.0" blue="1.0"/>
+		<ambientLight red="0.0" green="0.0" blue="0.4"/>
+	</background>
+
+	<!-- Camera Description -->
+	<camera fieldOfView="45.0" nearClip="0.1" farClip="100.0">
+		<position x="2.0" y="2.0" z="5.0"/>
+		<target x="1.0" y="1.0" z="-1.0"/>
+		<up x="0.0" y="1.0" z="0.0"/>
+	</camera>
+
+	<!-- Light Sources Collection -->
+	<light_list>
+		<!-- Light Description, Color & Position -->
+		<light>
+			<color red="0.5" green="0.5" blue="0.5"/>
+			<position x="0.0" y="0.0" z="15.0"/>
+			<attenuation constant="0.10" linear="0.03" quadratic="0.00"/>
+		</light>
+	</light_list>
+
+	<!-- Material Type Collection -->
+	<material_list>
+	
+		<!-- Material Descriptions -->
+		<material name="Purple">
+			<texture filename=""/>
+			<diffuse red="0.5" green="0.0" blue="0.5"/>
+			<specular red="0.1" green="0.00" blue="0.1" shininess="2.0"/>
+		</material>
+		
+	</material_list>
+
+	<!-- List of Scene Objects -->
+	<object_list>
+		<!-- Sphere Object -->
+		<sphere name="Sphere" material="Purple" radius="1.0">
+			<scale x="1.0" y="1.0" z="1.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<position x="0.0" y="0.0" z="0.0"/>
+			<center x="3.0" y="3.0" z="-5.0"/>
+		</sphere>
+
+	</object_list>
+	
+<!-- End of Scene -->
+</scene>

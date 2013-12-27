@@ -1,0 +1,31 @@
+a)	There are not many key commands to control the camera. The only way to navigate throughout the program is to right click on the program to open the menu. Render RayTrace loads the scene through rayTrace. Render Normal loads the scene through opengl. Second Scene was an attempt to switch to a new scene. As of now THAT DOES NOT DO ANYTHING. Quit simply quits the program
+b)	There aren’t many special functions implemented.
+c)	There weren’t any changes from the original specification
+d)	BE AWARE OF THE COMMENTS. If you manually switch the scenes from simple.xml to Light.xml you can see part 6 of the assignment where have it obvious with 2 lights in the scene. If you also change the depth in the trace algorithm (the if(N>0)) to 2, you can actually see the sphere reflect from each other. If you switch it to n>1, you can see some reflection but it’s partially since you can still see the material from the original one.
+e)	I have received a lot of help from Ross Maciejewski. The trace algorithm, the computeRay(), the isSphereIntersection(), Phong(), IsTriangleIntersection, CalculatePixel() was modified, tweaked, changed and helped by the professor a lot. I did some of the work but I went to the office hours and got lots of help from the professor, debugging and pseudo code given to me.
+
+MORE THINGS TO KNOW THAT IS IMPORTANT
+Plane is created but the checkerboard is not create. Model intersection is not done. Triangle Intersection is partially done. Phong lighting is done...i think
+
+The brushed brass is brass based off of a link where it was given the RGB for the ambient, specular and diffuse. 
+The background color IS light blue. It just doesn’t seem like it because it’s too light or too green-ish. I went on a table online, got the Dodger Blue, which had some blue but was also light in it. 
+
+If you uncomment the lines on 225,236,246, and 248-256, everything turns black. I have no idea why this is the case.
+
+PLEASE DO THESE THINGS.
+Change the number 0 to next to if(n>0) on line 159 on the code RayTrace.h to 2 to get the effect of reflection. The spheres are reflecting off of each other. Even the one to the distance to the upper right of the screen. 
+Change the number 0 to next to if(n>0) on line 159 on the code RayTrace.h to 1 and get the effect of partially reflection. The spheres are reflecting partially and you’ll get some reflection but still retaining the material on the sphere.
+Change the load scene from simple.xml to Light.xml. This will have the part where it is obvious to the user that there is 2 set lights. If not please view the Light.xml to view the xml code where I display the spheres and lights.
+
+
+
+
+
+
+
+
+PLEASE READ THIS STATEMENT-----------------------------------------------------
+TO RUN THE PROGRAM, PLEASE OPEN THROUGH THE .SLN file. It doesn't seem to open with the .exe file. Even with all the files provided
+Open the file
+OpeningFolder->RayTrace->RayTrace.sln
+It won't run for some reason otherwise with the .exe file

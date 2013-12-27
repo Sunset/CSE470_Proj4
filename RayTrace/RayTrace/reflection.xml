@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Scene Description in XML -->
+<scene desc="Simple Test Scene - Triangle + Sphere."
+	   author="Dr. Ross">
+	<!-- Background Color and Ambient Light Property -->
+	<background>
+		<color red="0.0" green="0.0" blue="1.0"/>
+		<ambientLight red="0.0" green="0.0" blue="0.4"/>
+	</background>
+
+	<!-- Camera Description -->
+	<camera fieldOfView="45.0" nearClip="0.1" farClip="100.0">
+		<position x="3.0" y="0.0" z="2.0"/>
+		<target x="0.0" y="0.0" z="-2.0"/>
+		<up x="0.0" y="1.0" z="0.0"/>
+	</camera>
+
+	<!-- Light Sources Collection -->
+	<light_list>
+		<!-- Light Description, Color & Position -->
+		<light>
+			<color red="0.5" green="0.5" blue="0.5"/>
+			<position x="0.0" y="5.0" z="0.0"/>
+			<attenuation constant="0.10" linear="0.03" quadratic="0.00"/>
+		</light>
+	</light_list>
+
+	<!-- Material Type Collection -->
+	<material_list>
+	
+		<!-- Material Descriptions -->
+		<material name="Brass">
+			<texture filename=""/>
+			<ambient red="0.329412" green="0.223529" blue="0.027451"/>
+			<diffuse red="0.780392" green="0.568627" blue="0.113725"/>
+			<specular red="0.297254" green="0.30829" blue="0.306678" shininess="0.1"/>
+		</material>
+		<material name="Purple">
+			<texture filename=""/>
+			<diffuse red="0.5" green="0.0" blue="0.5"/>
+			<specular red="0.1" green="0.00" blue="0.1" shininess="100.0"/>
+		</material>
+		<material name="White">
+			<texture filename=""/>
+			<diffuse red="1.0" green="1.0" blue="1.0"/>
+			<specular red="1.0" green="1.0" blue="1.0" shininess="50.0"/>
+			<transparent red="0.0" green="0.0" blue="0.0"/>
+			<reflective red="0.1" green="0.1" blue="0.1"/>
+			<refraction_index red="0.0" green="0.0" blue="0.0"/>
+		</material>
+		<material name="Red">
+			<texture filename=""/>
+			<diffuse red="1.0" green="0.0" blue="0.0"/>
+			<specular red="0.5" green="0.0" blue="0.0" shininess="5.0"/>
+			<transparent red="0.0" green="0.0" blue="0.0"/>
+			<reflective red="0.1" green="0.1" blue="0.1"/>
+			<refraction_index red="0.0" green="0.0" blue="0.0"/>
+		</material>
+	</material_list>
+
+	<!-- List of Scene Objects -->
+	<object_list>
+
+		<sphere name="Sphere" material="White" radius="0.5">
+			<scale x="1.0" y="1.0" z="1.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<position x="0.0" y="0.0" z="0.0"/>
+			<center x="-1.0" y="0.0" z="-2.0"/>
+		</sphere>
+		<sphere name="Sphere" material="Purple" radius="0.15">
+			<scale x="1.0" y="1.0" z="1.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<position x="0.0" y="0.0" z="0.0"/>
+			<center x="1.0" y="0.0" z="-2.0"/>
+		</sphere>
+
+	</object_list>
+	
+<!-- End of Scene -->
+</scene>
